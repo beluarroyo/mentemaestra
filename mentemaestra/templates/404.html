@@ -1,7 +1,20 @@
-{% extends "base.html" %}
+<html>
+<head>
+<title>Mentemaestra</title>
+<link href='colore2.css' rel='stylesheet' type='text/css'>
 
-{% block title %}Page Not found{% endblock %}
+</head>
+<body>
 
-{% block content %}
-<p>This is not the page you were looking for.</p>
-{% endblock content %}
+<h1> Mentemaestra /h1>
+
+<ul>
+	{% for encuesta in encuestas %}
+	<li><a href="mentemaestra/{{mentemaestra.id}}">{{mentemaestra}} </a></li>
+	{% endfor %}
+</ul>
+
+
+</body>
+</html>
+
